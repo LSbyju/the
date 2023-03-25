@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # write the routes using decorator functions
 # default route or 'URL'
-@app.route("/templates/index.html")
+@app.route("/static/index.html")
 def home():
 
     name = "" # write your name
@@ -15,7 +15,7 @@ def home():
     return render_template('index.html' , name = name , age = age)
 
 # define the route to father webpage
-@app.route("/templates/father.html")
+@app.route("/static/father.html")
 def home():
 
     fathername = "" # write your name
@@ -24,7 +24,7 @@ def home():
     return render_template('father.html' , fathername = name , fatherage = age)
 
 # define the route to mother webpage
-@app.route("/templates/mother.html")
+@app.route("/static/mother.html")
 def home():
 
     momname = "" # write your name
@@ -33,7 +33,7 @@ def home():
     return render_template('mother.html' , momname = name , momage = age)
 
 # define the route to friends webpage
-@app.route("/templates/friends.html")
+@app.route("/static/friends.html")
 def home():
 
     friendname = "" # write your name
